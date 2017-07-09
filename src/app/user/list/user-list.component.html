@@ -1,0 +1,17 @@
+<h2>
+  Lista użytkowników
+</h2>
+<div >
+  <ul>
+    <li *ngFor="let user of uzytkownicy">
+      <p>
+        {{user.imie}} {{user.nazwisko}} <span *ngIf="user.miejscowosc">z {{user.miejscowosc}} </span>  
+        <button [routerLink]="['/user/detail', user.id]">Zobacz szczegóły</button>
+      </p>
+      <!--<p>{{user.kodpocztowy}} {{user.miejscowosc}}</p>
+      <p>{{user.ulica}} {{user.ulicanumer}} <span *ngIf="user.ulicamieszkanie">/ {{user.ulicamieszkanie}}</span></p>
+      <p>{{user.telefon}}</p>
+      <p>{{user.dataurodzenia}}</p> -->
+    </li>
+  </ul>
+</div>

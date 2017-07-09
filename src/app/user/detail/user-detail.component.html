@@ -1,0 +1,13 @@
+<div *ngIf="uzytkownik">
+  <h2>Szczegóły dotyczące {{uzytkownik.imie}} {{uzytkownik.nazwisko}}</h2>
+ 
+  <div>
+    <label>id: </label>{{uzytkownik.id}}
+  </div>
+
+  <div *ngIf="uzytkownik.miejscowosc">
+   <label>miejscowosc: </label> {{uzytkownik.miejscowosc}}
+  </div>
+
+  <button (click)="Wroc()">Back</button>
+</div>

@@ -1,0 +1,50 @@
+   <!--
+   
+    <form [formGroup]="userForm" novalidate>
+
+      <div class="form-group">
+        <label for="imie">Imie</label>
+        <input type="text" class="form-control" id="imie" required formControlname="imie">
+        <div class="alert alert-danger">Imie jest wymagane</div>
+      </div>
+
+      <div class="form-group">
+        <label for="imie">Nazwisko</label>
+        <input type="text" class="form-control" id="nazwisko" required formControlname="nazwisko">
+        <div class="alert alert-danger">Nazwisko jest wymagane</div>
+      </div>
+
+      <div class="form-group">
+        <label for="miejscowosc">Miejscowosc</label>
+        <input type="text" class="form-control" id="miejscowosc" formControlname="miejscowosc">
+      </div> 
+
+      <div style="margin-bottom: 1em">
+        <button type="submit" [disabled]="userForm.pristine" class="btn btn-success">Save</button> &nbsp;
+        <button type="reset" (click)="revert()" [disabled]="userForm.pristine" class="btn btn-danger">Revert</button>
+      </div>
+
+    </form>
+
+
+
+
+  <div [hidden]="!submitted">
+    <h2>You submitted the following:</h2>
+    <div class="row">
+      <div class="col-xs-3">Name</div>
+      <div class="col-xs-9  pull-left">{{ model.name }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Alter Ego</div>
+      <div class="col-xs-9 pull-left">{{ model.alterEgo }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Power</div>
+      <div class="col-xs-9 pull-left">{{ model.power }}</div>
+    </div>
+    <br>
+    <button class="btn btn-primary" (click)="submitted=false">Edit</button>
+  </div>
+</div>
+    -->
